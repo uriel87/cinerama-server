@@ -1,0 +1,29 @@
+{
+  "name": "cinerama",
+  "version": "1.0.0",
+  "description": "web service - order movie app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Uriel Chechique & Liana Nehmad",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uriel87/cinerama.git"
+  },
+  "bugs": {
+    "url": "https://github.com/uriel87/cinerama/issues"
+  },
+  "homepage": "https://github.com/uriel87/cinerama#readme",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "express": "^4.13.4",
+    "merge": "^1.2.0",
+    "mongoose": "^4.4.20",
+    "movie-trailer": "^1.0.3",
+    "node-movie": "^2.0.0",
+    "showtimes": "^2.1.2"
+  },
+  "devDependencies": {}
+}
