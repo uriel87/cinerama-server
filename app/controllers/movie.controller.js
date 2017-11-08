@@ -7,7 +7,10 @@ var movie = require('node-movie'),
 	_ = require('underscore'),
 	dateFormat = require('dateformat'),
 	formatDate = require('format-date'),
-	merge = require('merge');
+	merge = require('merge'),
+	imdb = require('imdb-api'),
+	movies = require('../../config/movie.config');
+
 
 
 
@@ -203,8 +206,6 @@ exports.setOrderMovie = function(req,res) {
 
 
 
-
-
 /* ----------------------------------------------------
  * get more movie with some category
  * @param req
@@ -215,10 +216,10 @@ exports.setOrderMovie = function(req,res) {
 exports.getMovieCategory = function(req,res) {
 	console.log('In controller getMovieCategory');
 	var movieName = req.body.name;
-	movie(movieName,function (err, movieDoc) {
+	imdb.get(movieName, {apiKey: movies.movie.apikey},function (err, movieDoc) {
 		//movieCat = movieDoc.Genre;
-		var movieCat = movieDoc.Genre.split(",");
-
+		var movieCat = movieDoc.genres.split(",");
+		console.log("movieCat: " + movieCat);
 		someCategoryArr = findSomeCategory(movieCat);
 
 		var query = {
@@ -258,7 +259,9 @@ exports.getMovieCategory = function(req,res) {
 exports.getMovie = function (req,res) {
 	console.log('in controller getMovie');
 	var movieName = req.body.name;
-	movie(movieName,function (err, movieDoc) {
+	// http://www.omdbapi.com/?apikey=[yourkey]&
+	// 	omdb.get({ title: 'Saw', year: 2004 }, true, 		movie(movieName,function (err, movieDoc) {
+	imdb.get(movieName, {apiKey: movies.movie.apikey}, function (err, movieDoc) {
 		if(err) {
 			console.log(err);
 			res.status(200).json({
@@ -303,7 +306,8 @@ exports.getMovieTrailer = function (req,res) {
 			// movieTrailerDoc.indexOf("v=");
 			var finalPathTrailer = "https://www.youtube.com/embed/" + movieTrailerDoc.substr(movieTrailerDoc.indexOf("v=") + 2) ;
 
-			
+			//res.status(200).json(movieTrailerDoc);
+
 			res.status(200).json(finalPathTrailer);
 		}
 	});
