@@ -66,6 +66,39 @@ exports.getUser = function(req, res) {
 };
 
 
+/* ----------------------------------
+ * add user by email function
+ * @param req
+ * @param res
+ -------------------------------------*/
+
+
+exports.addUser = function(req, res) {
+	console.log('in controller getUser');
+
+	var newUser = new userSchema({
+		name: req.body.name,
+		email: req.body.email,
+		picture: req.body.picture,
+		birthday: req.body.birthday
+	})
+
+	newUser.save(function (err, userDoc) {
+		if(err) {
+			console.log(err);
+			res.status(200).json({
+				status: "404",
+				msg: " Database error in function getUser, user.controller.js",
+				err: err
+			});
+		}
+		else {
+			console.log("controller getUser: " + userDoc);
+			res.status(200).json(userDoc);
+		}
+	})
+
+};
 
 
 

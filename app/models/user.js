@@ -19,6 +19,8 @@ var userSchema = new schema( {
 	
 	picture: String,
 
+	birthday: String,
+
 	orders: [{
 	    movieId: { type: Number, unique: true }//,
 		// review: {type: String, enum: ['lame', 'wtf', 'wow', 'nice'], default: ""},
@@ -27,7 +29,6 @@ var userSchema = new schema( {
 	}]
 
 }, {collection: 'users'});
-
 
 // Define schema name
 mongoose.model('User',userSchema);
