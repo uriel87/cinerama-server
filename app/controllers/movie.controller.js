@@ -31,6 +31,7 @@ exports.getAllMovies = function (req,res) {
 
 	var movieDetails = {
 		_id: {
+			id: '$id',
 			name: '$name',
 			cinema: '$cinema',
 			branch: '$branch',
@@ -85,6 +86,7 @@ exports.getMovieDetails = function(req,res) {
 
 	var movieDetails = {
 		_id: {
+			id: '$id',
 			name: '$name',
 			cinema: '$cinema',
 			branch: '$branch',
