@@ -31,6 +31,7 @@ exports.getAllMovies = function (req,res) {
 
 	var movieDetails = {
 		_id: {
+			id: '$id',
 			name: '$name',
 			cinema: '$cinema',
 			branch: '$branch',
@@ -85,6 +86,7 @@ exports.getMovieDetails = function(req,res) {
 
 	var movieDetails = {
 		_id: {
+			id: '$id',
 			name: '$name',
 			cinema: '$cinema',
 			branch: '$branch',
@@ -135,6 +137,7 @@ exports.setOrderMovie = function(req,res) {
 	console.log('in controller setOrderMovie');
 
 	var query = {
+		id: req.body.id,
 		name: req.body.name,
 		//date: Date.parse(req.body.date),
 		cinema: req.body.cinema,
@@ -167,7 +170,9 @@ exports.setOrderMovie = function(req,res) {
 			});
 		}
 		else {
-			movieId = parseInt(movieDoc['id']);
+			// movieId = parseInt(movieDoc['id']);
+
+			movieId = parseInt(movieDoc.id);
 			var query = {
 				email: req.body.email
 			}
