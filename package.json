@@ -8,6 +8,7 @@
     "express": "^4.16.2",
     "format-date": "^1.0.0",
     "imdb-api": "^3.1.2",
+    "mongoose": "^4.13.5",
     "omdb": "^0.8.0",
     "underscore": "^1.8.3"
   },
@@ -23,9 +24,6 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/uriel87/cinerama-server/issues"
-  },
-  "engines": {
-    "node": "8.2.1"
   },
   "homepage": "https://github.com/uriel87/cinerama-server#readme"
 }
