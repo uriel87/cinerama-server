@@ -1,30 +1,27 @@
 {
-  "name": "cinerama",
+  "name": "cinerama-server",
   "version": "1.0.0",
-  "description": "web service - order movie app",
+  "description": "cinerama server",
   "main": "index.js",
+  "dependencies": {
+    "dateformat": "^1.0.12",
+    "format-date": "^1.0.0",
+    "imdb-api": "^3.1.2",
+    "omdb": "^0.8.0",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Uriel Chechique & Liana Nehmad",
-  "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/uriel87/cinerama.git"
+    "url": "git+https://github.com/uriel87/cinerama-server.git"
   },
+  "author": "Uriel Chechique",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/uriel87/cinerama/issues"
+    "url": "https://github.com/uriel87/cinerama-server/issues"
   },
-  "homepage": "https://github.com/uriel87/cinerama#readme",
-  "dependencies": {
-    "body-parser": "^1.15.1",
-    "express": "^4.13.4",
-    "imdb-api": "^3.1.2",
-    "merge": "^1.2.0",
-    "mongoose": "^4.4.20",
-    "movie-trailer": "^1.0.3",
-    "node-movie": "^2.0.0",
-    "showtimes": "^2.1.2"
-  },
-  "devDependencies": {}
+  "homepage": "https://github.com/uriel87/cinerama-server#readme"
 }
