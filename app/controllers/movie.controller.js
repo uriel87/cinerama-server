@@ -1,6 +1,6 @@
 
-var movie = require('node-movie'),
-	movieTrailer = require('movie-trailer'),
+// var movie = require('node-movie'),
+var movieTrailer = require('movie-trailer'),
 	MovieSchema = require('mongoose').model('Movie'),
 	userSchema = require('mongoose').model('User'),
 	ReviewSchema = require('mongoose').model('review'),
