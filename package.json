@@ -1,7 +1,7 @@
 {
-  "name": "cinerama-server",
+  "name": "cls",
   "version": "1.0.0",
-  "description": "cinerama server",
+  "description": "cinerams server",
   "main": "index.js",
   "dependencies": {
     "bson": "^1.0.4",
