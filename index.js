@@ -16,14 +16,12 @@ var app = express();
 
 // Use the Express application instance to listen to the port
 
-// app.set('port', process.env.PORT || 3000);
-//
-// var server = app.listen(app.get('port'), function() {
-//     console.log('Express server listening on port ' + server.address().port + ' ..');
-//
-// });
+app.set('port', process.env.port || 3000);
 
-app.use('/', express.static('./')).listen(process.env.PORT || 8080);
+var server = app.listen(app.get('port'), function() {
+    console.log('Express server listening on port ' + server.address().port + ' ..');
 
-console.log("Listen to port 8080");
+});
+
+
 
