@@ -4,7 +4,6 @@
   "description": "cinerama server",
   "main": "index.js",
   "dependencies": {
-    "bson": "^1.0.4",
     "dateformat": "^1.0.12",
     "express": "^4.16.2",
     "format-date": "^1.0.0",
