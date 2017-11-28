@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/uriel87/cinerama-server/issues"
   },
+  "engines": {
+    "node": "8.2.1"
+  },
   "homepage": "https://github.com/uriel87/cinerama-server#readme"
 }
