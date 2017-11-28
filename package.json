@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "dateformat": "^1.0.12",
+    "express": "^4.16.2",
     "format-date": "^1.0.0",
     "imdb-api": "^3.1.2",
     "omdb": "^0.8.0",
