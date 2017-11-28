@@ -4,10 +4,12 @@
   "description": "cinerama server",
   "main": "index.js",
   "dependencies": {
+    "bson": "^1.0.4",
     "dateformat": "^1.0.12",
     "express": "^4.16.2",
     "format-date": "^1.0.0",
     "imdb-api": "^3.1.2",
+    "merge": "^1.2.0",
     "mongoose": "^4.13.5",
     "omdb": "^0.8.0",
     "underscore": "^1.8.3"
