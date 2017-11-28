@@ -8,6 +8,7 @@
     "dateformat": "^1.0.12",
     "express": "^4.16.2",
     "format-date": "^1.0.0",
+    "formats": "^0.5.5",
     "imdb-api": "^3.1.2",
     "merge": "^1.2.0",
     "mongoose": "~4.4",
