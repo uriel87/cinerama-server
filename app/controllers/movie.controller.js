@@ -7,7 +7,7 @@ var movie = require('node-movie'),
 	_ = require('underscore'),
 	dateFormat = require('dateformat'),
 	formatDate = require('format-date'),
-	merge = require('merge'),
+	// merge = require('merge'),
 	imdb = require('imdb-api'),
 	movies = require('../../config/movie.config');
 
