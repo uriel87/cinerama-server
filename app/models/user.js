@@ -22,7 +22,8 @@ var userSchema = new schema( {
 	birthday: String,
 
 	orders: [{
-	    movieId: {type: Number, unique: true }//,
+	    movieId: {type: Number}//,
+		// movieId: {type: Number, unique: true }//,
 		// review: {type: String, enum: ['lame', 'wtf', 'wow', 'nice'], default: ""},
 		// comment: {type: String, default: ""},
 		// commitPush: {type: Boolean, default: false},
