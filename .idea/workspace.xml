@@ -28,8 +28,8 @@
       <file leaf-file-name="movie.controller.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/movie.controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="319" column="7" selection-start-line="319" selection-start-column="7" selection-end-line="319" selection-end-column="7" />
+            <state relative-caret-position="231">
+              <caret line="316" column="73" selection-start-line="316" selection-start-column="73" selection-end-line="316" selection-end-column="73" />
               <folding />
             </state>
           </provider>
@@ -312,12 +312,12 @@
       <workItem from="1511705591818" duration="10929000" />
       <workItem from="1511747352868" duration="12864000" />
       <workItem from="1512210609871" duration="12175000" />
-      <workItem from="1512740780779" duration="54000" />
+      <workItem from="1512740780779" duration="331000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="130387000" />
+    <option name="totallyTimeSpent" value="130664000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1696" height="1026" extended-state="0" />
@@ -723,8 +723,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/movie.controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="319" column="7" selection-start-line="319" selection-start-column="7" selection-end-line="319" selection-end-column="7" />
+        <state relative-caret-position="231">
+          <caret line="316" column="73" selection-start-line="316" selection-start-column="73" selection-end-line="316" selection-end-column="73" />
           <folding />
         </state>
       </provider>

@@ -314,7 +314,7 @@ exports.getMovieTrailer = function (req,res) {
 			//res.status(200).json(movieTrailerDoc);
 
 			// res.status(200).json(finalPathTrailer);
-			res.status(200).json(finalPathTrailer + "?rel=0");
+			res.status(200).json(finalPathTrailer + "?rel=0&showinfo=0");
 
 		}
 	});
